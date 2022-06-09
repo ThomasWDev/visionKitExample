@@ -37,11 +37,26 @@ extension VKFeatureListVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        gotoTextRecognition()
+        switch indexPath.row {
+        case 0:
+            gotoTextRecognition()
+        case 1:
+            gotoPetAnimalClassifierVC()
+        default:
+            gotoTextRecognition()
+        }
+        
     }
     
     private func gotoTextRecognition(){
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VKTextRecognitionVC") as! VKTextRecognitionVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    private func gotoPetAnimalClassifierVC(){
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VKPetAnimalClassifierVC") as! VKPetAnimalClassifierVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }

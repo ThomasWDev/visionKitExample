@@ -16,6 +16,7 @@
 		F806F4B8285250CA00270B36 /* VKFeatureListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F806F4B7285250CA00270B36 /* VKFeatureListVC.swift */; };
 		F806F4BB2852519F00270B36 /* VKFeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F806F4BA2852519F00270B36 /* VKFeatureCell.swift */; };
 		F806F4BE2852520800270B36 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F806F4BD2852520800270B36 /* Constants.swift */; };
+		F8B8265C28525A260062925F /* VKPetAnimalClassifierVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8265B28525A260062925F /* VKPetAnimalClassifierVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F806F4B7285250CA00270B36 /* VKFeatureListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKFeatureListVC.swift; sourceTree = "<group>"; };
 		F806F4BA2852519F00270B36 /* VKFeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKFeatureCell.swift; sourceTree = "<group>"; };
 		F806F4BD2852520800270B36 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8B8265B28525A260062925F /* VKPetAnimalClassifierVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKPetAnimalClassifierVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		F806F49B2852459800270B36 /* VisionKitTest */ = {
 			isa = PBXGroup;
 			children = (
+				F806F4BC285251FB00270B36 /* Utils */,
 				F806F4B12852466E00270B36 /* Features */,
 				F806F4B02852460500270B36 /* Resources */,
 			);
@@ -83,7 +86,8 @@
 		F806F4B12852466E00270B36 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				F806F4BC285251FB00270B36 /* Utils */,
+				F8B8265D28525A2C0062925F /* Dashboard */,
+				F8B8265A28525A100062925F /* PetAnimalClassifier */,
 				F806F4B22852467E00270B36 /* TextRecognization */,
 			);
 			path = Features;
@@ -92,9 +96,7 @@
 		F806F4B22852467E00270B36 /* TextRecognization */ = {
 			isa = PBXGroup;
 			children = (
-				F806F4B92852518400270B36 /* View */,
-				F806F4B5285246B600270B36 /* VKTextRecognitionVC.swift */,
-				F806F4B7285250CA00270B36 /* VKFeatureListVC.swift */,
+				F8B82659285259200062925F /* Controller */,
 			);
 			path = TextRecognization;
 			sourceTree = "<group>";
@@ -114,6 +116,47 @@
 				F806F4BD2852520800270B36 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F8B82659285259200062925F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F806F4B5285246B600270B36 /* VKTextRecognitionVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8B8265A28525A100062925F /* PetAnimalClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				F8B8266028525A5A0062925F /* Controller */,
+			);
+			path = PetAnimalClassifier;
+			sourceTree = "<group>";
+		};
+		F8B8265D28525A2C0062925F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F8B8265E28525A440062925F /* Controller */,
+				F806F4B92852518400270B36 /* View */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F8B8265E28525A440062925F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F806F4B7285250CA00270B36 /* VKFeatureListVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8B8266028525A5A0062925F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8B8265B28525A260062925F /* VKPetAnimalClassifierVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +232,7 @@
 			files = (
 				F806F4B6285246B600270B36 /* VKTextRecognitionVC.swift in Sources */,
 				F806F49D2852459800270B36 /* AppDelegate.swift in Sources */,
+				F8B8265C28525A260062925F /* VKPetAnimalClassifierVC.swift in Sources */,
 				F806F4BB2852519F00270B36 /* VKFeatureCell.swift in Sources */,
 				F806F4B8285250CA00270B36 /* VKFeatureListVC.swift in Sources */,
 				F806F49F2852459800270B36 /* SceneDelegate.swift in Sources */,

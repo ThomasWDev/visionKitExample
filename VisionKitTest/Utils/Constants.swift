@@ -8,5 +8,5 @@
 import Foundation
 
 struct Constants{
-    static let featureList = ["Text recognition"]
+    static let featureList = ["Text recognition", "Pet Animal Classifier"]
 }

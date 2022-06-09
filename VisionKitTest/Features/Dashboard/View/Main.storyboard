@@ -90,7 +90,6 @@
                     <navigationItem key="navigationItem" id="i6l-Nd-YDB"/>
                     <connections>
                         <outlet property="tblView" destination="ScT-RS-l3A" id="R9e-um-VPU"/>
-                        <segue destination="ZLf-zI-MZt" kind="show" id="FBk-Nc-QsQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdi-ch-N7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -106,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UuS-nC-agT">
-                                <rect key="frame" x="107" y="376" width="200" height="197.5"/>
+                                <rect key="frame" x="107" y="354" width="200" height="197.5"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="040-4T-yCO"/>
@@ -114,7 +113,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oc0-FH-FjB">
-                                <rect key="frame" x="87" y="200" width="240" height="128"/>
+                                <rect key="frame" x="87" y="178" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="6M6-TJ-gC4"/>
@@ -124,7 +123,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czw-cN-Rir">
-                                <rect key="frame" x="145" y="610" width="124" height="40"/>
+                                <rect key="frame" x="145" y="588" width="124" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hOU-Qb-FcS"/>
                                 </constraints>
@@ -157,7 +156,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwD-lc-DtI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="74"/>
+            <point key="canvasLocation" x="723" y="82"/>
+        </scene>
+        <!--Pet Animal ClassifierVC-->
+        <scene sceneID="ESi-BI-Nlx">
+            <objects>
+                <viewController storyboardIdentifier="VKPetAnimalClassifierVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wky-Ev-I4w" customClass="VKPetAnimalClassifierVC" customModule="VisionKitTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1LF-NP-XVl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2cU-EB-Hnb">
+                                <rect key="frame" x="107" y="354" width="200" height="197.5"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="IgL-0E-p9D"/>
+                                    <constraint firstAttribute="width" constant="200" id="JYM-vX-Vve"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XDl-yy-JNF">
+                                <rect key="frame" x="87" y="178" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="D8w-ZW-DL1"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLx-Ow-4Qg">
+                                <rect key="frame" x="164.5" y="588" width="85" height="30"/>
+                                <state key="normal" title="Take Picture"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="wky-Ev-I4w" eventType="touchUpInside" id="qMD-ce-ktb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yyq-Lt-CoH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2cU-EB-Hnb" firstAttribute="centerX" secondItem="Yyq-Lt-CoH" secondAttribute="centerX" id="HNG-Kw-nyA"/>
+                            <constraint firstItem="XDl-yy-JNF" firstAttribute="leading" secondItem="Yyq-Lt-CoH" secondAttribute="leading" constant="87" id="RHi-TA-zv4"/>
+                            <constraint firstItem="XDl-yy-JNF" firstAttribute="centerX" secondItem="Yyq-Lt-CoH" secondAttribute="centerX" id="Rtn-oT-c4U"/>
+                            <constraint firstItem="sLx-Ow-4Qg" firstAttribute="centerX" secondItem="Yyq-Lt-CoH" secondAttribute="centerX" id="UcW-4u-1tT"/>
+                            <constraint firstItem="Yyq-Lt-CoH" firstAttribute="trailing" secondItem="XDl-yy-JNF" secondAttribute="trailing" constant="87" id="V0z-Ht-i72"/>
+                            <constraint firstItem="sLx-Ow-4Qg" firstAttribute="top" secondItem="2cU-EB-Hnb" secondAttribute="bottom" constant="35" id="ipj-aJ-I9C"/>
+                            <constraint firstItem="2cU-EB-Hnb" firstAttribute="top" secondItem="XDl-yy-JNF" secondAttribute="bottom" constant="47" id="tAI-Gs-qeU"/>
+                            <constraint firstItem="2cU-EB-Hnb" firstAttribute="centerY" secondItem="Yyq-Lt-CoH" secondAttribute="centerY" id="vjX-T5-Sac"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="2cU-EB-Hnb" id="3Zq-XQ-Dcx"/>
+                        <outlet property="takePictureBtn" destination="sLx-Ow-4Qg" id="lF1-PI-ILR"/>
+                        <outlet property="textView" destination="XDl-yy-JNF" id="zEn-Gm-o1A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLq-LN-tUv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1488" y="82"/>
         </scene>
     </scenes>
     <resources>
